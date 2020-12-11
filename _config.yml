@@ -1,0 +1,27 @@
+title: wanzhebufangqiのblog
+header-img: img/post-bg-desk.png
+email: wangzhebufangqi@hnu.edu.cn
+description: 不管过了几载春秋，我还是会偶尔想起
+keyword: "wangzhebufangqi, 就算过了一载春秋"
+url: "http://wangzhebufangqi.github.io"
+github_repo: "https://github.com/wangzhebufangqi/wangzhebufangqi.github.io.git"
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "等待热泪盈眶的那一天"
+sidebar-avatar: /img/avatar-touxiang.png
+
+
+# SNS settings
+RSS: false
+# weibo_username:     
+zhihu_username:     dan-ran-shi-jie
+github_username:    wangzhebufangqi
+#facebook_username:  
+jianshu_username:   4cc00ff26ffe
+csdn_username:      qq_40889820
+#twitter_username:   
+qq_number:          1823636309
+
+
