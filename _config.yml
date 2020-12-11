@@ -24,4 +24,26 @@ csdn_username:      qq_40889820
 #twitter_username:   
 qq_number:          1823636309
 
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
 
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# Friends
+friends: [
+    {
+        title: "WilliamWuLH",
+        href: "https://github.com/WilliamWuLH"
+    },{
+        title: "longkejie",
+        href: "https://github.com/longkejie"
+    }
+]
