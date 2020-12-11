@@ -3,7 +3,7 @@ layout: page
 description: "不管过了几载春秋，我还是会偶尔想起"
 ---
 <!-- site -> paginator !-->
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">

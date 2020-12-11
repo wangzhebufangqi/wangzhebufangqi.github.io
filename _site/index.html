@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="不管过了几载春秋，我还是会偶尔想起">
     <meta name="keywords"  content="wangzhebufangqi, 就算过了一载春秋">
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="#000000">
     
     <title></title>
 
@@ -187,35 +187,6 @@
             ">
     			<!-- site -> paginator !-->
 
-<div class="post-preview">
-    <a href="/2020/12/11/lxml.etree%E5%AD%A6%E4%B9%A0.html">
-        <h2 class="post-title">
-            lxml.etree学习
-        </h2>
-        
-        <h3 class="post-subtitle">
-            初探etree
-        </h3>
-        
-        <div class="post-content-preview">
-            导入lxml.etree的一种常见的方式：
-
-&gt;&gt;&gt; from lxml import etree
-
-
-The Element class
-
-元素（Element）是ElementTree API的主要容器对象。 大多数XML树功能都是通过此类访问的。 元素可以通过Element方法轻松创建：
-
-&gt;&gt;&gt; root = etree.Element("root...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by wangzhebufangqi on December 11, 2020
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -237,9 +208,21 @@ The Element class
                     <div class="tags">
                         
                             
-                        
+                                <a href="/tags/#python" title="python" rel="1">
+                                    python
+                                </a>
                             
                         
+                            
+                                <a href="/tags/#lxml" title="lxml" rel="1">
+                                    lxml
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#爬虫" title="爬虫" rel="1">
+                                    爬虫
+                                </a>
                             
                         
                     </div>
@@ -327,11 +310,7 @@ The Element class
                     
                         <li><a href="https://github.com/WilliamWuLH">WilliamWuLH</a></li>
                     
-                        <li><a href="https://blog.csdn.net/qq_40889820">CSDN</a></li>
-                    
-                        <li><a href="https://www.cnblogs.com/wangzhebufangqi/">博客园</a></li>
-                    
-                        <li><a href="https://developer.apple.com/">Apple Developer</a></li>
+                        <li><a href="https://github.com/longkejie">longkejie</a></li>
                     
                 </ul>
                 
@@ -426,6 +405,16 @@ The Element class
 <script src="/js/hux-blog.min.js "></script>
 
 <!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
 
 
 

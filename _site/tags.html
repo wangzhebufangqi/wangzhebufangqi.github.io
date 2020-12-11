@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="不管过了几载春秋，我还是会偶尔想起">
     <meta name="keywords"  content="wangzhebufangqi, 就算过了一载春秋">
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="#000000">
     
     <title>Tags - </title>
 
@@ -157,13 +157,13 @@
 
 
     <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+<header class="intro-header" style="background-image: url('/img/tag-bg.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" id="tag-heading">
                     <h1>Tags</h1>
-                    <span class="subheading">keep hungry keep foolish</span>
+                    <span class="subheading">标签分类</span>
                 </div>
             </div>
         </div>
@@ -362,6 +362,16 @@
 <script src="/js/hux-blog.min.js "></script>
 
 <!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
 
 
 
