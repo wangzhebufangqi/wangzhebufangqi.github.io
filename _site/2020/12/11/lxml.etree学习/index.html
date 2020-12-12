@@ -729,7 +729,7 @@ b'</span><span class="n">HelloW</span>\<span class="n">xc3</span>\<span class="n
 
 <p>在lxml 1.3.4中，此序列化行为已更改。 之前，该树已序列化而没有DTD内容，这使lxml在输入输出循环中丢失了DTD信息。</p>
 
-<h1 id="parsing-from-strings-and-files">Parsing from strings and files</h1>
+<h2 id="parsing-from-strings-and-files">Parsing from strings and files</h2>
 
 <p>lxml.etree支持通过多种方式从所有重要来源（即字符串，文件，URL（http / ftp）和类似文件的对象）解析XML。 主要的解析函数是<code class="language-plaintext highlighter-rouge">fromstring</code>和<code class="language-plaintext highlighter-rouge">parse</code>，两者均以源作为第一个参数进行调用。 默认情况下，它们使用标准解析器，但是始终可以将其他解析器作为第二个参数传递。</p>
 
@@ -904,6 +904,41 @@ b'</span><span class="n">HelloW</span>\<span class="n">xc3</span>\<span class="n
 
 
 
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+        // anchors.options = {
+        //   visible: 'always',
+        //   placement: 'right',
+        //   icon: '#'
+        // };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
     <!-- Footer -->

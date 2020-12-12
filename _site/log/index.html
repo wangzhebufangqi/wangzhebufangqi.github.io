@@ -185,8 +185,50 @@
                 col-xs-12
                 postlist-container
             ">
-    			<p>2020/12/11	初步理解jekyll，开始DIY</p>
-<p>2020/11/15	fork他人模板，jekyll+Github Pages</p>
+    			<h1 id="20201212">20201212</h1>
+
+<p>修改博客内容侧边栏目录样式。</p>
+
+<p>在<code class="language-plaintext highlighter-rouge">css/hux-blog.min.css</code>文件（<strong>打开后是压缩后的一行，可利用<a href="https://c.runoob.com/front-end/52">在线工具</a>解压缩</strong>）中的<code class="language-plaintext highlighter-rouge">.side-catalog .catalog-body</code>字段进行修改：</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.side-catalog</span> <span class="nc">.catalog-body</span> <span class="nc">.h1_nav</span><span class="p">{</span>
+	<span class="nl">margin-left</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span><span class="m">18px</span><span class="p">;</span>
+	<span class="nl">font-weight</span><span class="p">:</span><span class="m">700</span>
+<span class="p">}</span>
+<span class="nc">.side-catalog</span> <span class="nc">.catalog-body</span> <span class="nc">.h2_nav</span><span class="p">{</span>
+	<span class="nl">margin-left</span><span class="p">:</span><span class="m">5px</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span><span class="m">16px</span><span class="p">;</span>
+	<span class="nl">font-weight</span><span class="p">:</span><span class="m">500</span>
+<span class="p">}</span>
+<span class="nc">.side-catalog</span> <span class="nc">.catalog-body</span> <span class="nc">.h3_nav</span> <span class="p">{</span>
+	<span class="nl">margin-left</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span><span class="m">14px</span><span class="p">;</span>
+	<span class="nl">font-weight</span><span class="p">:</span><span class="m">300</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>这样就将1、2、3级标题区分开来了，其他同理。</p>
+
+<p>另外，原模板会用…代替溢出的内容，可修改为visible</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.side-catalog</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span>
+	<span class="nl">overflow</span><span class="p">:</span><span class="nb">visible</span><span class="p">;</span>	<span class="c">/* 由hidden修改为visible */</span>
+	<span class="nl">height</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+	<span class="nl">padding-bottom</span><span class="p">:</span><span class="m">40px</span><span class="p">;</span>
+	<span class="nl">width</span><span class="p">:</span><span class="m">195px</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="20201211">20201211</h1>
+
+<p>开始学习jekyll，尝试在模板的基础上进行DIY</p>
+
+<h1 id="20201115">20201115</h1>
+
+<p>fork他人<a href="https://github.com/qiubaiying/qiubaiying.github.io">模板</a>，jekyll+Github Pages</p>
+
 
     		</div>
     <!-- Sidebar Container -->
