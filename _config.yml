@@ -47,6 +47,10 @@ featured-condition-size: 0              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 754beb167de3c961d54391f301300311
+
 # Friends
 friends: [
     {

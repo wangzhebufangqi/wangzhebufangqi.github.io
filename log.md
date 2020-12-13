@@ -5,6 +5,36 @@ description: "建站日志"
 header-img: "img/post-bg-log.png"
 ---
 
+# 20201213
+
+设置百度统计
+
+在`_config.yml`文件中设置`ba_track_id`，该值为[百度统计](https://tongji.baidu.com)中新增网站后在代码获取中的一长串ID。
+
+![](https://gitee.com/wangzhebufangqi/PictureBed/raw/master/image-20201213210747622.png)
+
+可以发现，在`_includes\footer.html`文件中用到了这个ID：
+
+```javascript
+<!-- Baidu Tongji -->
+{% if site.ba_track_id %}
+<script>
+    var _baId = '{{ site.ba_track_id }}';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+{% endif %}
+```
+
+用到了百度统计官方提供的代码。
+
 # 20201212
 
 修改博客内容侧边栏目录样式。
