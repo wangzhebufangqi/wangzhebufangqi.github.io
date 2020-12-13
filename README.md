@@ -1,4 +1,9 @@
+
+![Github License](https://img.shields.io/github/license/wangzhebufangqi/wangzhebufangqi.github.io)
+
 # 开始
+
+（以下主要为jekyll学习笔记，使用教程见参考）
 
 ## 安装
 
@@ -157,7 +162,7 @@ $ jekyll build --source _source --destination _deploy
 
 ## 配置
 
-
+见参考
 
 # 博客内容
 
@@ -322,17 +327,9 @@ title: Blogging Like a Hacker
 | `file.basename`      | 文件名称（不带扩展名） 如：文件`image.jpg`对应`image`    |
 | `file.extname`       | 文件的扩展名，如 `image.jpg` 中的 `.jpg`                 |
 
-
-
-
-
-
-
 # 参考
 
 [博客搭建详细教程](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B)
-
-
 
 [jekyll官网](https://jekyllrb.com/)
 

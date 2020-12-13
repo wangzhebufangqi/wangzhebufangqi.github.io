@@ -11,7 +11,7 @@ header-img: "img/post-bg-log.png"
 
 在`_config.yml`文件中设置`ba_track_id`，该值为[百度统计](https://tongji.baidu.com)中新增网站后在代码获取中的一长串ID。
 
-![](https://gitee.com/wangzhebufangqi/PictureBed/raw/master/image-20201213210747622.png)
+<img src="https://gitee.com/wangzhebufangqi/PictureBed/raw/master/image-20201213210747622.png" width="70%"/>
 
 可以发现，在`_includes\footer.html`文件中用到了这个ID：
 
